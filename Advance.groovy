@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label "slave-vm"
+    }
     parameters {
         choice(
             name: 'TERRAFORM_ACTION',
