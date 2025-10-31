@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label "slave-vm"
+    }
     stages {
         stage("IAC") {
             steps {
