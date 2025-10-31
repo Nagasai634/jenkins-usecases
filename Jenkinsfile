@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("IAC") {
             steps {
-                dir("/c/Users/konderu Nagasai/USESCASES/jenkins_usecases"){
+                dir("/home/ansible/jenkins-usecases"){
                     sh "terraform init"
                     sh "terraform plan"
                     sh "terraform apply --auto-approve"
